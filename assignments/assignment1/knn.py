@@ -141,4 +141,5 @@ class KNN:
             indexes = dists[i].argsort()[:self.k]
             pred[i] = stats.mode(self.train_y[indexes])[0]
             #pred[i] = np.mean(self.train_y[indexes])
+	    pass
         return pred
